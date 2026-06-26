@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website resmi SMK Muhammadiyah 1 Klaten Utara — Sekolah Menengah Kejuruan berbasis teknologi, karakter, dan prestasi di Klaten, Jawa Tengah." />
+  <meta name="theme-color" content="#0f5c2e" />
+  <title>SMK Muhammadiyah 1 Klaten Utara — Teknologi, Karakter, Prestasi</title>
+
+  <!-- Favicon (graduation cap, inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2316a34a' d='M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM5 13.2V17l7 4 7-4v-3.8l-7 3.8-7-3.8z'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Poppins (judul) + Inter (teks) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR (sticky) ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#beranda" class="brand" aria-label="SMK Muhammadiyah 1 Klaten Utara - Beranda">
+        <span class="brand__logo" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM5 13.2V17l7 4 7-4v-3.8l-7 3.8-7-3.8z"/></svg>
+        </span>
+        <span class="brand__text">
+          <strong>SMK Muhammadiyah 1</strong>
+          <small>Klaten Utara</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Navigasi utama">
+        <a href="#profil" class="nav-link">Profil</a>
+        <a href="#jurusan" class="nav-link">Jurusan</a>
+        <a href="#ekstrakurikuler" class="nav-link">Ekstrakurikuler</a>
+        <a href="#alamat" class="nav-link">Alamat</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+        <a href="https://ppdbmusaka.com" target="_blank" rel="noopener" class="btn btn--accent btn--sm nav-cta">Daftar PPDB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HERO / BERANDA ===================== -->
+  <section class="hero" id="beranda">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <span class="hero__badge reveal">Sekolah Pusat Keunggulan · NPSN 20309531</span>
+      <h1 class="hero__title reveal">SMK Muhammadiyah 1<br />Klaten Utara</h1>
+      <p class="hero__subtitle reveal">
+        Sekolah Menengah Kejuruan Berbasis Teknologi, Karakter, dan Prestasi
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#jurusan" class="btn btn--accent">Lihat Jurusan</a>
+        <a href="#kontak" class="btn btn--ghost">Hubungi Kami</a>
+      </div>
+    </div>
+    <a href="#profil" class="hero__scroll" aria-label="Gulir ke bawah">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===================== STATS STRIP ===================== -->
+  <section class="stats" aria-label="Statistik sekolah">
+    <div class="container stats__grid">
+      <div class="stat reveal">
+        <div class="stat__num" data-count="6">0</div>
+        <div class="stat__label">Program Keahlian</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="10" data-suffix="+">0</div>
+        <div class="stat__label">Ekstrakurikuler</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num" data-count="13878" data-format="thousand">0</div>
+        <div class="stat__label">m² Luas Lahan</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat__num">A</div>
+        <div class="stat__label">Terakreditasi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROFIL SEKOLAH ===================== -->
+  <section class="section" id="profil">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Tentang Kami</span>
+        <h2 class="section__title">Profil Sekolah</h2>
+        <p class="section__lead">
+          SMK Muhammadiyah 1 Klaten Utara adalah sekolah menengah kejuruan swasta unggulan
+          di Kabupaten Klaten yang memadukan penguasaan teknologi, pembentukan karakter islami,
+          dan pengembangan prestasi. Dengan beragam program keahlian, fasilitas praktik berstandar
+          industri, serta kegiatan ekstrakurikuler yang lengkap, kami menyiapkan lulusan yang
+          kompeten, berakhlak, disiplin, dan siap bersaing di dunia kerja maupun perguruan tinggi.
+        </p>
+      </div>
+
+      <div class="cards-3">
+        <article class="info-card reveal">
+          <div class="info-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6m11-11h-6M7 12H1"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>Visi</h3>
+          <p>
+            Terwujudnya lulusan yang beriman dan bertakwa, berkarakter mulia, kompeten,
+            kreatif, serta berdaya saing di tingkat nasional maupun global.
+          </p>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="info-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3>Misi</h3>
+          <ul class="info-card__list">
+            <li>Menyelenggarakan pendidikan kejuruan berbasis teknologi dan industri.</li>
+            <li>Membentuk karakter islami, disiplin, dan tanggung jawab.</li>
+            <li>Mengembangkan keterampilan, kreativitas, dan jiwa wirausaha siswa.</li>
+            <li>Menjalin kemitraan erat dengan dunia usaha dan dunia industri (DUDI).</li>
+          </ul>
+        </article>
+
+        <article class="info-card reveal">
+          <div class="info-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2L12 16.6 5.7 21l2.3-7.2-6-4.4h7.6z"/></svg>
+          </div>
+          <h3>Keunggulan</h3>
+          <ul class="info-card__list">
+            <li>Sekolah Pusat Keunggulan (SMK PK).</li>
+            <li>Pembiasaan ibadah: shalat Dhuha, Dhuhur &amp; Ashar berjamaah.</li>
+            <li>Peralatan praktik berstandar industri.</li>
+            <li>Bursa Kerja Khusus (BKK) &amp; kerja sama DUDI.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== JURUSAN ===================== -->
+  <section class="section section--alt" id="jurusan">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Program Keahlian</span>
+        <h2 class="section__title">Jurusan Keahlian</h2>
+        <p class="section__lead">
+          Pilih jurusan sesuai minat dan bakatmu. Setiap program keahlian didukung
+          fasilitas praktik berstandar industri dan tenaga pengajar profesional.
+        </p>
+      </div>
+
+      <div class="jurusan-grid">
+        <!-- Setiap kartu: area gambar (dengan ikon fallback) + isi -->
+        <article class="jurusan-card reveal">
+          <div class="jurusan-card__media media-mesin">
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Mesin" loading="lazy" onerror="this.remove()" />
+            <span class="jurusan-card__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </span>
+          </div>
+          <div class="jurusan-card__body">
+            <h3>Teknik Mesin</h3>
+            <p>Keahlian permesinan, pengelasan, dan manufaktur menggunakan mesin bubut, frais, hingga CNC standar industri.</p>
+          </div>
+        </article>
+
+        <article class="jurusan-card reveal">
+          <div class="jurusan-card__media media-listrik">
+            <img src="https://images.unsplash.com/photo-1620283085439-39620a1e21c4?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Ketenagalistrikan" loading="lazy" onerror="this.remove()" />
+            <span class="jurusan-card__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </span>
+          </div>
+          <div class="jurusan-card__body">
+            <h3>Teknik Ketenagalistrikan</h3>
+            <p>Instalasi tenaga listrik, perawatan motor listrik, serta sistem kelistrikan rumah dan industri.</p>
+          </div>
+        </article>
+
+        <article class="jurusan-card reveal">
+          <div class="jurusan-card__media media-konstruksi">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Konstruksi dan Perumahan" loading="lazy" onerror="this.remove()" />
+            <span class="jurusan-card__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg>
+            </span>
+          </div>
+          <div class="jurusan-card__body">
+            <h3>Teknik Konstruksi dan Perumahan</h3>
+            <p>Teknik bangunan, konstruksi gedung, dan pelaksanaan proyek perumahan sesuai standar keselamatan kerja.</p>
+          </div>
+        </article>
+
+        <article class="jurusan-card reveal">
+          <div class="jurusan-card__media media-tjkt">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Jaringan Komputer dan Telekomunikasi" loading="lazy" onerror="this.remove()" />
+            <span class="jurusan-card__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="6" rx="1"/><rect x="2" y="15" width="20" height="6" rx="1"/><path d="M6 6h.01M6 18h.01M12 9v6"/></svg>
+            </span>
+          </div>
+          <div class="jurusan-card__body">
+            <h3>Teknik Jaringan Komputer Telekomunikasi</h3>
+            <p>Instalasi jaringan, administrasi server, fiber optik, dan teknologi telekomunikasi terkini.</p>
+          </div>
+        </article>
+
+        <article class="jurusan-card reveal">
+          <div class="jurusan-card__media media-pplg">
+            <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=800&q=70" alt="Praktik Pengembangan Perangkat Lunak dan Game" loading="lazy" onerror="this.remove()" />
+            <span class="jurusan-card__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
+            </span>
+          </div>
+          <div class="jurusan-card__body">
+            <h3>Pengembangan Perangkat Lunak dan Game</h3>
+            <p>Membangun aplikasi, website, dan game dengan pemrograman modern serta desain UI/UX yang menarik.</p>
+          </div>
+        </article>
+
+        <article class="jurusan-card reveal">
+          <div class="jurusan-card__media media-dpib">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=70" alt="Praktik Desain Pemodelan dan Informasi Bangunan" loading="lazy" onerror="this.remove()" />
+            <span class="jurusan-card__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/><path d="M13 13h4v4"/></svg>
+            </span>
+          </div>
+          <div class="jurusan-card__body">
+            <h3>Desain Pemodelan dan Informasi Bangunan</h3>
+            <p>Merancang bangunan dengan AutoCAD, SketchUp, dan teknologi BIM (Building Information Modeling).</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EKSTRAKURIKULER ===================== -->
+  <section class="section" id="ekstrakurikuler">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Pengembangan Diri</span>
+        <h2 class="section__title">Ekstrakurikuler</h2>
+        <p class="section__lead">
+          Beragam kegiatan untuk menyalurkan minat, bakat, dan membentuk karakter
+          serta kepemimpinan siswa di luar jam pelajaran.
+        </p>
+      </div>
+
+      <div class="ekskul-grid">
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16 8 14 14 8 16 10 10 16 8"/></svg>
+          </span>
+          <h3>HW (Hizbul Wathan)</h3>
+          <p>Gerakan kepanduan Muhammadiyah pembentuk kemandirian dan kepemimpinan.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M3 12h6m6 0h6m-9 3v6"/></svg>
+          </span>
+          <h3>Stir Mobil</h3>
+          <p>Pelatihan mengemudi sebagai bekal keterampilan dan kesiapan dunia kerja.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          </span>
+          <h3>Bahasa Jepang</h3>
+          <p>Penguasaan bahasa asing untuk membuka peluang magang dan kerja luar negeri.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M9 3v2c0 4-2 7-6 9M5 9c0 2 3 4 7 5"/><path d="m13 21 4-9 4 9M14.5 17h5"/></svg>
+          </span>
+          <h3>Bahasa Korea</h3>
+          <p>Belajar bahasa dan budaya Korea untuk memperluas wawasan global siswa.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3c3 3 4 6 4 9s-1 6-4 9M12 3c-3 3-4 6-4 9s1 6 4 9M3.5 9h17M3.5 15h17"/></svg>
+          </span>
+          <h3>Voli</h3>
+          <p>Olahraga tim yang melatih kekompakan, sportivitas, dan kebugaran fisik.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m12 7 2.9 2.1-1.1 3.4h-3.6L9.1 9.1 12 7zM12 3v4M4.5 9l3.6 1M19.5 9l-3.6 1M7 19l1.4-3.5M17 19l-1.4-3.5"/></svg>
+          </span>
+          <h3>Futsal</h3>
+          <p>Mengasah teknik, strategi, dan kerja sama tim dalam sepak bola ruangan.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l3-1 4 2 4-3 3 1M4 17h16"/><circle cx="9" cy="6" r="2"/><path d="M9 8v3"/></svg>
+          </span>
+          <h3>Pencak Silat</h3>
+          <p>Seni bela diri Tapak Suci untuk ketangguhan fisik, mental, dan akhlak.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M9 7h7M9 11h7"/></svg>
+          </span>
+          <h3>Qiroah</h3>
+          <p>Seni membaca Al-Qur'an dengan tartil dan lagu yang indah serta benar.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4M8 21h8"/></svg>
+          </span>
+          <h3>Public Speaking</h3>
+          <p>Melatih kepercayaan diri dan kemampuan berbicara di depan umum.</p>
+        </article>
+
+        <article class="ekskul-card reveal">
+          <span class="ekskul-card__ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </span>
+          <h3>Grafis</h3>
+          <p>Desain grafis kreatif: poster, logo, dan konten digital dengan tools profesional.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ALAMAT & GOOGLE MAPS ===================== -->
+  <section class="section section--alt" id="alamat">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Lokasi</span>
+        <h2 class="section__title">Alamat Sekolah</h2>
+        <p class="section__lead">
+          Temukan kami di kawasan Klaten Utara. Silakan berkunjung untuk informasi
+          pendaftaran dan kunjungan sekolah.
+        </p>
+      </div>
+
+      <div class="alamat-grid">
+        <div class="alamat-info reveal">
+          <ul class="alamat-list">
+            <li>
+              <span class="alamat-list__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <strong>Alamat</strong>
+                <p>Jl. Ki Ageng Pengging No. 40, Girimulyo, Gergunung, Kec. Klaten Utara, Kabupaten Klaten, Jawa Tengah 57434</p>
+              </div>
+            </li>
+            <li>
+              <span class="alamat-list__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div>
+                <strong>Telepon</strong>
+                <p><a href="tel:0272321935">(0272) 321935</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="alamat-list__ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+              </span>
+              <div>
+                <strong>Website</strong>
+                <p><a href="https://smkmuh1kltu.sch.id" target="_blank" rel="noopener">smkmuh1kltu.sch.id</a></p>
+              </div>
+            </li>
+          </ul>
+          <a href="https://www.google.com/maps/search/?api=1&query=SMK+Muhammadiyah+1+Klaten+Utara" target="_blank" rel="noopener" class="btn btn--primary">Buka di Google Maps</a>
+        </div>
+
+        <!-- Embedded Google Maps (responsif, tanpa API key) -->
+        <div class="map-wrap reveal">
+          <iframe
+            title="Lokasi SMK Muhammadiyah 1 Klaten Utara di Google Maps"
+            src="https://www.google.com/maps?q=SMK%20Muhammadiyah%201%20Klaten%20Utara%2C%20Gergunung%2C%20Klaten%20Utara&z=16&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER / KONTAK ===================== -->
+  <footer class="footer" id="kontak">
+    <div class="container footer__grid">
+      <div class="footer__col footer__brand">
+        <div class="brand brand--footer">
+          <span class="brand__logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM5 13.2V17l7 4 7-4v-3.8l-7 3.8-7-3.8z"/></svg>
+          </span>
+          <span class="brand__text">
+            <strong>SMK Muhammadiyah 1</strong>
+            <small>Klaten Utara</small>
+          </span>
+        </div>
+        <p class="footer__desc">
+          Sekolah Menengah Kejuruan berbasis teknologi, karakter, dan prestasi.
+          Membentuk generasi unggul, kompeten, dan berakhlak mulia.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Kontak</h4>
+        <ul class="footer__list">
+          <li>Jl. Ki Ageng Pengging No. 40, Gergunung, Klaten Utara, Klaten, Jawa Tengah 57434</li>
+          <li>Telp: <a href="tel:0272321935">(0272) 321935</a></li>
+          <li>Email PPDB: <a href="mailto:ppdb@smkmuh1kltu.sch.id">ppdb@smkmuh1kltu.sch.id</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Tautan</h4>
+        <ul class="footer__list">
+          <li><a href="#profil">Profil Sekolah</a></li>
+          <li><a href="#jurusan">Jurusan Keahlian</a></li>
+          <li><a href="#ekstrakurikuler">Ekstrakurikuler</a></li>
+          <li><a href="https://ppdbmusaka.com" target="_blank" rel="noopener">Pendaftaran (PPDB)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> SMK Muhammadiyah 1 Klaten Utara. Seluruh hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tombol kembali ke atas -->
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
