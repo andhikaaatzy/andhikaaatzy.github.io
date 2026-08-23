@@ -288,6 +288,21 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; color: var(--i
   left: 50%; bottom: 26px;
   transform: translateX(-50%);
   z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+
+.hero__scroll:hover {
+  opacity: 0.8;
+  transform: translateX(-50%) translateY(3px);
+}
+
+/* Membuat bentuk bingkai mouse */
+.hero__scroll .scroll-icon {
   width: 26px; height: 42px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 100px;
@@ -295,8 +310,32 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.2; color: var(--i
   justify-items: center;
   padding-top: 8px;
 }
-.hero__scroll span { width: 4px; height: 8px; border-radius: 4px; background: #fff; animation: scrollDot 1.6s infinite; }
-@keyframes scrollDot { 0% { opacity: 0; transform: translateY(0); } 40% { opacity: 1; } 80% { opacity: 0; transform: translateY(14px); } 100% { opacity: 0; } }
+
+/* Membuat titik animasi (scroll) di dalam mouse */
+.hero__scroll .scroll-icon::before {
+  content: "";
+  width: 4px; height: 8px;
+  border-radius: 4px;
+  background: #fff;
+  animation: scrollDot 1.6s infinite;
+}
+
+/* Styling teks SCROLL DOWN */
+.hero__scroll .scroll-text {
+  font-family: var(--font-head);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@keyframes scrollDot { 
+  0% { opacity: 0; transform: translateY(0); } 
+  40% { opacity: 1; } 
+  80% { opacity: 0; transform: translateY(14px); } 
+  100% { opacity: 0; } 
+}
 
 /* ============================================================
    STATS STRIP
