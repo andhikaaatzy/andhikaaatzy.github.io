@@ -5,6 +5,7 @@
    - Scroll reveal (IntersectionObserver)
    - Animasi angka statistik
    - Tombol kembali ke atas
+   - Modal detail jurusan
    ============================================================ */
 (function () {
   "use strict";
@@ -47,6 +48,92 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeMenu();
   });
+
+  /* ---------- 2b. Modal detail jurusan ---------- */
+  const modal = document.getElementById("jurusanModal");
+  const jurusanCards = document.querySelectorAll(".jurusan-card");
+
+  if (modal && jurusanCards.length) {
+    const modalImg = document.getElementById("modalImg");
+    const modalAbbr = document.getElementById("modalAbbr");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalMateri = document.getElementById("modalMateri");
+    const modalKerja = document.getElementById("modalKerja");
+    const modalKuliah = document.getElementById("modalKuliah");
+    const modalWirausaha = document.getElementById("modalWirausaha");
+    const modalClose = modal.querySelector(".modal-close");
+    let lastFocused = null;
+
+    // Isi container dengan chip untuk tiap item (dipisah koma)
+    function fillChips(container, value) {
+      container.textContent = "";
+      (value || "")
+        .split(",")
+        .map(function (s) { return s.trim(); })
+        .filter(Boolean)
+        .forEach(function (item) {
+          const chip = document.createElement("span");
+          chip.textContent = item; // textContent -> aman dari injeksi HTML
+          container.appendChild(chip);
+        });
+    }
+
+    function openModal(card) {
+      const img = card.querySelector(".jurusan-card__media img");
+      const title = card.dataset.title || (card.querySelector("h3") || {}).textContent || "";
+
+      if (img && img.getAttribute("src")) {
+        modalImg.src = img.getAttribute("src");
+        modalImg.alt = img.getAttribute("alt") || title;
+        modalImg.style.display = "";
+      } else {
+        modalImg.removeAttribute("src");
+        modalImg.style.display = "none";
+      }
+
+      modalAbbr.textContent = card.dataset.abbr || "";
+      modalAbbr.style.display = card.dataset.abbr ? "" : "none";
+      modalTitle.textContent = title.trim();
+      modalMateri.textContent = card.dataset.materi || "";
+      modalWirausaha.textContent = card.dataset.wirausaha || "";
+      fillChips(modalKerja, card.dataset.kerja);
+      fillChips(modalKuliah, card.dataset.kuliah);
+
+      lastFocused = document.activeElement;
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+      if (modalClose) modalClose.focus();
+    }
+
+    function closeModal() {
+      if (!modal.classList.contains("open")) return;
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+      if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
+    }
+
+    jurusanCards.forEach(function (card) {
+      card.addEventListener("click", function () { openModal(card); });
+      // Dukungan keyboard: Enter / Spasi
+      card.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openModal(card);
+        }
+      });
+    });
+
+    // Tutup lewat tombol X atau klik area luar (overlay)
+    modal.addEventListener("click", function (e) {
+      if (e.target.closest("[data-close]")) closeModal();
+    });
+    // Tutup dengan Escape
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closeModal();
+    });
+  }
 
   /* ---------- 3. Tombol kembali ke atas ---------- */
   toTop.addEventListener("click", function () {
