@@ -23,8 +23,8 @@
   <header class="navbar" id="navbar">
     <div class="container navbar__inner">
       <a href="#beranda" class="brand" aria-label="SMK Muhammadiyah 1 Klaten Utara - Beranda">
-        <span class="brand__logo" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM5 13.2V17l7 4 7-4v-3.8l-7 3.8-7-3.8z"/></svg>
+        <span class="brand__logo">
+          <img src="logo_musaka.png" alt="Logo SMK Muhammadiyah 1 Klaten Utara" class="brand__logo-img" />
         </span>
         <span class="brand__text">
           <strong>SMK Muhammadiyah 1</strong>
@@ -70,7 +70,7 @@
   <section class="stats" aria-label="Statistik sekolah">
     <div class="container stats__grid">
       <div class="stat reveal">
-        <div class="stat__num" data-count="6">0</div>
+        <div class="stat__num" data-count="5">0</div>
         <div class="stat__label">Program Keahlian</div>
       </div>
       <div class="stat reveal">
@@ -158,20 +158,32 @@
 
       <div class="jurusan-grid">
         <!-- Setiap kartu: area gambar (dengan ikon fallback) + isi -->
-        <article class="jurusan-card reveal">
+        <article class="jurusan-card reveal" role="button" tabindex="0" aria-haspopup="dialog"
+          data-abbr="TP"
+          data-title="Teknik Pemesinan"
+          data-materi="CNC, G-code, CAD/CAM, quality control"
+          data-kerja="CNC Programmer, Drafter, QC Inspector"
+          data-kuliah="Teknik Mesin, Teknik Produksi, Teknik Industri"
+          data-wirausaha="Bengkel CNC, jasa spare part presisi">
           <div class="jurusan-card__media media-mesin">
-            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Mesin" loading="lazy" onerror="this.remove()" />
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Pemesinan" loading="lazy" onerror="this.remove()" />
             <span class="jurusan-card__ico" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
             </span>
           </div>
           <div class="jurusan-card__body">
-            <h3>Teknik Mesin</h3>
+            <h3>Teknik Pemesinan</h3>
             <p>Keahlian permesinan, pengelasan, dan manufaktur menggunakan mesin bubut, frais, hingga CNC standar industri.</p>
           </div>
         </article>
 
-        <article class="jurusan-card reveal">
+        <article class="jurusan-card reveal" role="button" tabindex="0" aria-haspopup="dialog"
+          data-abbr="TKL"
+          data-title="Teknik Ketenagalistrikan"
+          data-materi="Instalasi tenaga listrik, motor listrik, panel kontrol, PLC"
+          data-kerja="Teknisi Listrik, Panel Builder, Maintenance Industri"
+          data-kuliah="Teknik Elektro, Teknik Listrik, Mekatronika"
+          data-wirausaha="Jasa instalasi listrik, servis dinamo dan pompa air">
           <div class="jurusan-card__media media-listrik">
             <img src="https://images.unsplash.com/photo-1620283085439-39620a1e21c4?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Ketenagalistrikan" loading="lazy" onerror="this.remove()" />
             <span class="jurusan-card__ico" aria-hidden="true">
@@ -184,7 +196,13 @@
           </div>
         </article>
 
-        <article class="jurusan-card reveal">
+        <article class="jurusan-card reveal" role="button" tabindex="0" aria-haspopup="dialog"
+          data-abbr="TKP"
+          data-title="Teknik Konstruksi dan Perumahan"
+          data-materi="Konstruksi gedung, struktur beton, estimasi biaya, K3"
+          data-kerja="Pelaksana Lapangan, Estimator, Quantity Surveyor"
+          data-kuliah="Teknik Sipil, Arsitektur, Manajemen Konstruksi"
+          data-wirausaha="Kontraktor perumahan, jasa renovasi bangunan">
           <div class="jurusan-card__media media-konstruksi">
             <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Konstruksi dan Perumahan" loading="lazy" onerror="this.remove()" />
             <span class="jurusan-card__ico" aria-hidden="true">
@@ -197,7 +215,13 @@
           </div>
         </article>
 
-        <article class="jurusan-card reveal">
+        <article class="jurusan-card reveal" role="button" tabindex="0" aria-haspopup="dialog"
+          data-abbr="TJKT"
+          data-title="Teknik Jaringan Komputer Telekomunikasi"
+          data-materi="Jaringan komputer, administrasi server, fiber optik, keamanan jaringan"
+          data-kerja="Network Engineer, Teknisi FTTH, IT Support"
+          data-kuliah="Teknik Informatika, Teknik Telekomunikasi, Sistem Komputer"
+          data-wirausaha="Penyedia jasa internet RT/RW Net, instalasi CCTV">
           <div class="jurusan-card__media media-tjkt">
             <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=70" alt="Praktik Teknik Jaringan Komputer dan Telekomunikasi" loading="lazy" onerror="this.remove()" />
             <span class="jurusan-card__ico" aria-hidden="true">
@@ -210,7 +234,13 @@
           </div>
         </article>
 
-        <article class="jurusan-card reveal">
+        <article class="jurusan-card reveal" role="button" tabindex="0" aria-haspopup="dialog"
+          data-abbr="PPLG"
+          data-title="Pengembangan Perangkat Lunak dan Game"
+          data-materi="Pemrograman web dan mobile, basis data, UI/UX, game engine"
+          data-kerja="Web Developer, Mobile Developer, Game Programmer"
+          data-kuliah="Teknik Informatika, Sistem Informasi, Ilmu Komputer"
+          data-wirausaha="Software house, jasa pembuatan website dan aplikasi">
           <div class="jurusan-card__media media-pplg">
             <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=800&q=70" alt="Praktik Pengembangan Perangkat Lunak dan Game" loading="lazy" onerror="this.remove()" />
             <span class="jurusan-card__ico" aria-hidden="true">
@@ -220,19 +250,6 @@
           <div class="jurusan-card__body">
             <h3>Pengembangan Perangkat Lunak dan Game</h3>
             <p>Membangun aplikasi, website, dan game dengan pemrograman modern serta desain UI/UX yang menarik.</p>
-          </div>
-        </article>
-
-        <article class="jurusan-card reveal">
-          <div class="jurusan-card__media media-dpib">
-            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=70" alt="Praktik Desain Pemodelan dan Informasi Bangunan" loading="lazy" onerror="this.remove()" />
-            <span class="jurusan-card__ico" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/><path d="M13 13h4v4"/></svg>
-            </span>
-          </div>
-          <div class="jurusan-card__body">
-            <h3>Desain Pemodelan dan Informasi Bangunan</h3>
-            <p>Merancang bangunan dengan AutoCAD, SketchUp, dan teknologi BIM (Building Information Modeling).</p>
           </div>
         </article>
       </div>
@@ -335,6 +352,127 @@
     </div>
   </section>
 
+  <!-- ===================== PENGUMUMAN & PPDB ===================== -->
+  <section class="section section--alt" id="pengumuman">
+    <div class="container">
+      <!-- Banner peringatan kuning -->
+      <div class="alert-banner reveal" role="note">
+        <span class="alert-banner__ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h2l4 4V6L6 10H4a1 1 0 0 0-1 1z"/><path d="M14 8a5 5 0 0 1 0 8M17 5a9 9 0 0 1 0 14"/></svg>
+        </span>
+        <div class="alert-banner__body">
+          <strong>Pengumuman Penting</strong>
+          <p>Selamat datang di sistem pendaftaran siswa baru. Pastikan Anda mengisi data dengan benar dan valid. Hubungi panitia jika ada kendala.</p>
+        </div>
+      </div>
+
+      <div class="ppdb-grid">
+        <!-- Kolom kiri: Alur Pendaftaran -->
+        <div class="alur-card reveal">
+          <div class="panel-head">
+            <span class="panel-head__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+            </span>
+            <h3>Alur Pendaftaran</h3>
+          </div>
+          <ol class="alur-list">
+            <li>Daftar Online di <a href="https://www.spmb.ppdbmusaka.com/" target="_blank" rel="noopener">https://spmb.ppdbmusaka.com/</a></li>
+            <li>Cetak formulir</li>
+            <li>Datang ke Musaka untuk test buta warna</li>
+            <li>Melakukan Daftar Ulang (transfer atau datang ke Musaka). Rek. Bank BRI, AN: PPDB SMK MUH 1 KLATEN UTARA. NO REK: 6732-01-035120-53-3</li>
+            <li>Pengumuman</li>
+            <li>Selamat anda jadi siswa Musaka</li>
+            <li>Selesai</li>
+          </ol>
+        </div>
+
+        <!-- Kolom kanan: Jadwal Pendaftaran -->
+        <div class="jadwal-col reveal">
+          <div class="panel-head panel-head--plain">
+            <span class="panel-head__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </span>
+            <h3>Jadwal Pendaftaran</h3>
+          </div>
+
+          <div class="jadwal-grid">
+            <article class="jadwal-card jadwal-card--active">
+              <span class="jadwal-badge jadwal-badge--live">Berlangsung</span>
+              <h4>Indent 1</h4>
+              <p>Bulan Juli s/d Oktober 2026 Potongan 50%. Hanya membayar 2 Juta bagi Jurusan Teknik Mesin dan 1.750.000 bagi Jurusan TKP, TJKT, TKl, dan PPLG.</p>
+              <ul class="jadwal-meta">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  Buka: 10 Juli 2026
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  Tutup: 31 Oktober 2026
+                </li>
+              </ul>
+            </article>
+
+            <article class="jadwal-card">
+              <span class="jadwal-badge jadwal-badge--soon">Akan Datang</span>
+              <h4>Gelombang 2</h4>
+              <p>Gelombang 3 mendapat potongan 1 juta, jika dibayar lunas.</p>
+              <ul class="jadwal-meta">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  Buka: 1 Januari 2027
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  Tutup: 28 Februari 2027
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DOKUMEN PENDAFTARAN ===================== -->
+  <section class="section" id="dokumen">
+    <div class="container">
+      <div class="section__head section__head--plain reveal">
+        <h2 class="dok-title">Dokumen Pendaftaran</h2>
+        <p class="dok-subtitle">Download dokumen penting untuk referensi Anda.</p>
+      </div>
+
+      <div class="dokumen-grid">
+        <article class="dokumen-card reveal">
+          <span class="dokumen-card__ico dokumen-card__ico--blue" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg>
+          </span>
+          <div class="dokumen-card__body">
+            <h3>Brosur PPDB</h3>
+            <p>Informasi lengkap program, fasilitas, dan keunggulan sekolah.</p>
+            <a href="brosur-ppdb-musaka.pdf" download class="btn-download btn-download--blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download Brosur
+            </a>
+          </div>
+        </article>
+
+        <article class="dokumen-card reveal">
+          <span class="dokumen-card__ico dokumen-card__ico--green" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h5M9.5 14.5h5M12 7l-2.5 2.5M12 7l2.5 2.5"/></svg>
+          </span>
+          <div class="dokumen-card__body">
+            <h3>Rincian Biaya</h3>
+            <p>Informasi biaya pendaftaran, SPP, dan kebutuhan lainnya.</p>
+            <a href="rincian-biaya-musaka.pdf" download class="btn-download btn-download--green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download Rincian Biaya
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== ALAMAT & GOOGLE MAPS ===================== -->
   <section class="section section--alt" id="alamat">
     <div class="container">
@@ -399,8 +537,8 @@
     <div class="container footer__grid">
       <div class="footer__col footer__brand">
         <div class="brand brand--footer">
-          <span class="brand__logo" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2 1 8l11 6 9-4.9V17h2V8L12 2zM5 13.2V17l7 4 7-4v-3.8l-7 3.8-7-3.8z"/></svg>
+          <span class="brand__logo">
+            <img src="logo_musaka.png" alt="Logo SMK Muhammadiyah 1 Klaten Utara" class="brand__logo-img" />
           </span>
           <span class="brand__text">
             <strong>SMK Muhammadiyah 1</strong>
@@ -444,6 +582,57 @@
   <button class="to-top" id="toTop" aria-label="Kembali ke atas">
     <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
   </button>
+
+  <!-- ===================== MODAL DETAIL JURUSAN ===================== -->
+  <div class="modal" id="jurusanModal" aria-hidden="true">
+    <div class="modal-overlay" data-close></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" data-close aria-label="Tutup detail jurusan">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+
+      <div class="modal-media" id="modalMedia">
+        <img id="modalImg" src="" alt="" onerror="this.style.display='none'" />
+      </div>
+
+      <div class="modal-body">
+        <span class="modal-abbr" id="modalAbbr">TP</span>
+        <h3 class="modal-title" id="modalTitle">Teknik Pemesinan</h3>
+
+        <div class="modal-block">
+          <h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h6a3 3 0 0 1 3 3v10a2 2 0 0 0-2-2H2zM22 6h-6a3 3 0 0 0-3 3v10a2 2 0 0 1 2-2h7z"/></svg>
+            Materi Pembelajaran
+          </h4>
+          <p id="modalMateri"></p>
+        </div>
+
+        <div class="modal-block">
+          <h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            Prospek Kerja
+          </h4>
+          <div class="modal-chips" id="modalKerja"></div>
+        </div>
+
+        <div class="modal-block">
+          <h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+            Prospek Kuliah
+          </h4>
+          <div class="modal-chips" id="modalKuliah"></div>
+        </div>
+
+        <div class="modal-block">
+          <h4>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M3 9l2-5h14l2 5M12 9v12"/></svg>
+            Prospek Wirausaha
+          </h4>
+          <p id="modalWirausaha"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
